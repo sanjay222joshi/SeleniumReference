@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ <suite name="Sanity tests suite" preserve-order="false">
+
+
+<!-- <test verbose="2" name="Firefox Tests" preserve-order="false">
+	<parameter name="browser" value="firefox"/>
+	
+<classes>
+		<class name="com.cnbc.sanity.SanityTestCaseExecutor"/>
+	</classes>
+</test> 
+
+
+<test verbose="2" name="IE Tests" preserve-order="false">
+	<parameter name="browser" value="iexplore"/>
+	
+<classes>
+		<class name="com.cnbc.sanity.SanityTestCaseExecutor"/>
+	</classes>
+</test>  -->
+
+
+<test verbose="2" name="Chrome Tests" preserve-order="false">
+	<parameter name="browser" value="chrome"/>
+	<parameter name="xml" value="sanity"/>
+	
+	<classes>
+		<!-- <class name="com.cnbc.sanity.SanityTestCaseExecutor"/> -->
+	</classes>
+</test>
+
+<listeners>
+	 <listener class-name="com.sanjay.utils.TestReporter"/>
+</listeners>
+</suite>
